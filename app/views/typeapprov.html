@@ -1,0 +1,53 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Type approval details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home">V55/4</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/vehiclespecs" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+        <h2 style="margin-bottom: 40px;">Type approval details</h2>
+        <div class="form-group">
+            <label for="type_approval">
+        <div class="label-title">Type approval number / category</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+            <div class="form-group">
+            <label for="type">
+        <div class="label-title">Type</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+            <div class="form-group">
+            <label for="Version">
+        <div class="label-title">Version</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+            <div class="form-group">
+            <label for="Variant">
+        <div class="label-title">Variant</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+  <div class="form-group">
+            <label for="Eurostatus">
+        <div class="label-title">Euro status</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+      <div class="form-group">
+            <label for="Eurostatusdir">
+        <div class="label-title">Euro status directive number</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+           <div class="form-group">
+            <label for="rde">
+        <div class="label-title">RDE step1/step2 ?</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+    
+        <a href="/emissionsdetails" class="btn btn-primary">Continue</a>
+    </div>
+
+    {% endblock %}

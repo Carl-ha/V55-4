@@ -1,0 +1,78 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Keeper details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home">V55/4</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/smmt" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+        <h2 style="margin-bottom: 40px;">Keeper details</h2>
+
+        <div class="form-group">
+            <label for="Title">
+        <div class="label-title">Title</div>
+            <input type="text" class="form-control form-control-1-4">
+                <br>
+                <br>
+        <div class="form-group">   
+            <label for="company_name"> 
+        <div class="label-title">Company name</div>
+            <input type="text" class="form-control form-control-1-4">
+                <br>
+                <br>
+              <div class="form-group">      
+                 <label for="first_name">
+        <div class="label-title">First name(s)</div>
+            <input type="text" class="form-control form-control-1-4">          
+                     </div> 
+            <div class="form-group">      
+                 <label for="Surname">
+        <div class="label-title">Surname</div>
+            <input type="text" class="form-control form-control-1-4">          
+                     </div> 
+                <div class="form-group">      
+                 <label for="dvla_fleet">
+        <div class="label-title">Dvla fleet number</div>
+            <input type="text" class="form-control form-control-1-4">          
+                     </div>
+                    
+                    <div class="form-group">    
+            <label for="Registration_number">
+        <div class="label-title">Date of birth</div>
+            <input type="text" class="form-control form-control-1-4" style="width:60px;"placeholder="DD">
+                <input type="text" class="form-control form-control-1-4" style="width:60px;"placeholder="MM">
+                <input type="text" class="form-control form-control-1-4" style="width:65px;"placeholder="YYYY">
+                </div>
+                  
+                         <div class="form-group">      
+                 <label for="address">
+        <div class="label-title">Address</div>
+            <input type="text" class="form-control form-control-1-3"><br>
+                     <input type="text" class="form-control form-control-1-3"><br>
+                     <input type="text" class="form-control form-control-1-3"><br>
+                     <input type="text" class="form-control form-control-1-3"><br>
+                     </div>
+                             
+        <div class="form-group">
+            <label for="post_town">
+        <div class="label-title">Post town</div>
+            <input type="text" class="form-control form-control-1-3">
+                <br>
+                <br>
+                 <div class="form-group">
+            <label for="post_code">
+        <div class="label-title">Post code</div>
+            <input type="text" class="form-control form-control-1-4">
+      
+</div>
+                             
+                  
+                  
+                
+        </div>
+                <a href="/index.html" class="btn btn-primary">Submit</a>
+{% endblock %}

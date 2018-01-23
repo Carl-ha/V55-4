@@ -1,0 +1,36 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} SMMT details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home">V55/4</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/sounddetails" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+        <h2 style="margin-bottom: 40px;">SMMT details</h2>
+
+        <div class="form-group">
+            <label for="original_dealer">
+        <div class="label-title">Original dealer code</div>
+            <input type="text" class="form-control form-control-1-4">
+                </div>
+                 <div class="form-group">
+            <label for="selling_dealer">
+        <div class="label-title">Selling dealer code</div>
+            <input type="text" class="form-control form-control-1-4">
+                </div>
+                 <label for="sales_type">
+        <div class="label-title">Sales type</div>
+            <input type="text" class="form-control form-control-1-4">    
+                     </div>
+                
+                
+        </div>
+            <br>
+            <br>
+            
+                <a href="/keeperdetails.html" class="btn btn-primary">Continue</a>
+{% endblock %}

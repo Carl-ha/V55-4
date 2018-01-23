@@ -1,0 +1,94 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Vechilce summary {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home">V55/4</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+
+<div class="row">
+    <div class="col-12">
+        <h2 style="margin-bottom: 40px;">Vehicle summary</h2>
+
+        <div class="form-group">
+            <label for="Registration_number">
+        <div class="label-title">Registration number</div>
+            <input type="text" class="form-control form-control-1-4">
+        </div>
+            <div class="form-group">
+            <label for="listprice">
+        <div class="label-title">List price</div>
+                <div class="input-group input-group-1-4">
+                <span class="input-group-addon">£</span>
+                
+            <input type="text" class="form-control">
+                </div>
+        </div>
+    
+    <form>
+    <div class="form-group inline">
+        <fieldset>
+            <legend>
+                Is the vehicle left or right hand drive ?
+            </legend>
+      
+            <div class="multiple-choice">
+                <input id="radio-inline-3" type="radio" name="radio-group" value="rh">
+                <label for="radio-inline-3">RH</label>
+        </div>
+        <div class="multiple-choice">
+            <input id="radio-inline-4" type="radio" name="radio-group" value="lh">
+            <label for="radio-inline-4">LH</label>
+        </div>
+
+        </fieldset>
+    </div>
+    </form>
+
+</div>
+
+
+<div class="col-2">
+    <div class="form-group">
+        <label for="make">
+        <div class="label-title">Make</div>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="form-group">
+            <label for="model">
+        <div class="label-title">Model</div>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+</div>
+     <div class="form-group">
+            <label for="Engine_number">
+        <div class="label-title">Engine number</div>
+            <input type="text" class="form-control form-control-1-4">
+        </div>
+         <div class="form-group">
+            <label for="colours">
+        <div class="label-title">Colour(s)</div>
+            <input type="text" class="form-control form-control-1-4">
+        </div>
+             <div class="form-group">
+            <label for="vin">
+        <div class="label-title">Vehicle identification number</div>
+            <input type="text" class="form-control form-control-1-4">
+        </div>
+                      <div class="form-group">
+            <label for="vehicle_family">
+        <div class="label-title">Vehicle family identification number</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+            <div class="form-group">
+            <label for="country_vehicle">
+        <div class="label-title">Country vehicle purchased from</div>
+            <input type="text" class="form-control form-control-1-3">
+        </div>
+                <a href="/regdetails.html" class="btn btn-primary">Continue</a>
+{% endblock %}

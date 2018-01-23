@@ -1,0 +1,105 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Dimension details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home">V55/4</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/emissionsdetails" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+        <h2 style="margin-bottom: 40px;">Dimension details</h2>
+        <div class="form-group">
+            <label for="wheelbase">
+        <div class="label-title">Wheelbase (mm)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:140px;">
+        </div>
+            <div class="form-group">
+            <label for="width">
+        <div class="label-title">Width (mm)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:140px;">
+        </div>
+                <div class="form-group">
+            <label for="length">
+        <div class="label-title">Length (mm)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:140px;">
+        </div>
+                    <div class="form-group">
+            <label for="rev_weight">
+        <div class="label-title">Revenue weight (kg)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:165px;">
+        </div>
+                                 <div class="form-group">
+            <label for="max_permis">
+        <div class="label-title">Max permisible mass (kg)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:165px;">
+        </div>
+            <div class="form-group">
+            <label for="unladen_weight">
+        <div class="label-title">Unladen weight (kg)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:165px;">
+        </div>
+        <div class="form-group">
+            <label for="max_net">
+        <div class="label-title">Max net power (kW)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:165px;">
+        </div>
+        <div class="form-group">
+            <label for="mass_in_service">
+        <div class="label-title">Mass in service (kg)</div>
+            <input type="text" class="form-control form-control-1-3"style="width:165px;">
+        </div>
+               <div class="label-title">Track width axel(s) (mm) (1) (2) (3)</div> 
+                <br>
+                 <div class="customcol">
+                <div class="input-group">
+            <input type="text" class="form-control" placeholder="Min">
+                </div>
+        </div>
+     <div class="col-2">
+                <div class="input-group">   
+            <input type="text" class="form-control" placeholder="Max">
+                     
+                    
+                </div> 
+    
+            </div> 
+              <div class="col-2">
+                  
+               <a href="#">Add</a>
+                     
+                    
+                </div> 
+            <br>
+            <br>
+            <br>
+                 <div class="label-title">Technical permissable maximum towable mass of the trailer (Kg)</div> 
+                <br>
+                 <div class="customcol">
+                <div class="input-group">
+            <input type="text" class="form-control" placeholder="Braked">
+                </div>
+        </div>
+     <div class="col-2">
+                <div class="input-group">   
+            <input type="text" class="form-control" placeholder="Un braked">
+                     
+                    
+                </div> 
+    
+            </div> 
+    
+            </div> 
+             <br>
+            <br>
+            <br>
+             
+            </div>
+            
+
+              <a href="/sounddetails.html" class="btn btn-primary">Continue</a>
+                </div>
+           
+         {% endblock %}
