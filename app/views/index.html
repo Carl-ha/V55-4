@@ -12,12 +12,12 @@
     <div class="col-12">
         <h2 style="margin-bottom: 40px;">Vehicle summary</h2>
 
-        <div class="form-group">
+        <div class="form-group" id="registration_number">
             <label for="Registration_number">
         <div class="label-title">Registration number</div>
             <input type="text" class="form-control form-control-1-4">
         </div>
-            <div class="form-group">
+            <div class="form-group" id="listprice">
             <label for="listprice">
         <div class="label-title">List price</div>
                 <div class="input-group input-group-1-4">
@@ -28,18 +28,18 @@
         </div>
     
     <form>
-    <div class="form-group inline">
+    <div class="form-group inline" id="drive">
         <fieldset>
             <legend>
                 Is the vehicle left or right hand drive ?
             </legend>
       
             <div class="multiple-choice">
-                <input id="radio-inline-3" type="radio" name="radio-group" value="rh">
+                <input id="radio-inline-3" type="radio" name="radio-group" value="rh" id="rh">
                 <label for="radio-inline-3">RH</label>
         </div>
         <div class="multiple-choice">
-            <input id="radio-inline-4" type="radio" name="radio-group" value="lh">
+            <input id="radio-inline-4" type="radio" name="radio-group" value="lh" id="lh">
             <label for="radio-inline-4">LH</label>
         </div>
 
@@ -51,43 +51,50 @@
 
 
 <div class="col-2">
-    <div class="form-group">
+    <div class="form-group" id="make">
         <label for="make">
         <div class="label-title">Make</div>
+        </label>
             <input type="text" class="form-control">
         </div>
     </div>
     <div class="col-2">
-        <div class="form-group">
+        <div class="form-group" id="model">
             <label for="model">
         <div class="label-title">Model</div>
+        </label>
             <input type="text" class="form-control">
         </div>
     </div>
 </div>
      <div class="form-group">
-            <label for="Engine_number">
-        <div class="label-title">Engine number</div>
+            <label for="Engine_number" id="engine_number">
+        <div class="label-title">engine_number</div>
+        </label>
             <input type="text" class="form-control form-control-1-4">
         </div>
-         <div class="form-group">
+         <div class="form-group" id="colours">
             <label for="colours">
         <div class="label-title">Colour(s)</div>
+        </label>
             <input type="text" class="form-control form-control-1-4">
         </div>
-             <div class="form-group">
+             <div class="form-group" id="vin">
             <label for="vin">
         <div class="label-title">Vehicle identification number</div>
+        </label>
             <input type="text" class="form-control form-control-1-4">
         </div>
-                      <div class="form-group">
+                      <div class="form-group" id="vehicle_family">
             <label for="vehicle_family">
         <div class="label-title">Vehicle family identification number</div>
+        </label>
             <input type="text" class="form-control form-control-1-3">
         </div>
-            <div class="form-group">
+            <div class="form-group" id="country_vehicle">
             <label for="country_vehicle">
         <div class="label-title">Country vehicle purchased from</div>
+        </label>
             <input type="text" class="form-control form-control-1-3">
         </div>
                 <a href="/regdetails.html" class="btn btn-primary">Continue</a>
