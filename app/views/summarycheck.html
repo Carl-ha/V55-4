@@ -1,0 +1,111 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Vehicle summary check {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email-address@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/index" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+<h2>Vehicle summary check</h2>
+<br>
+<br>
+        <ul class="list">
+            <li class="list-title-row">
+                <span class="list-title">
+                    Vehicle summary
+                </span>
+                <span class="list-change">
+                    <a href="/index.html">Change</a>
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="regnum">
+                    Registration number
+                </span>
+                <span class="list-data">
+                    ABC1234
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="listprice">
+                    List price
+                </span>
+                <span class="list-data">
+                    £9999999
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="drive">
+                    Vehicle drive
+                </span>
+                <span class="list-data">
+                    RHD
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="make">
+                   Make
+                </span>
+                <span class="list-data">
+                   Ford
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="model">
+                    Model
+                </span>
+                <span class="list-data">
+                    Focus
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="colour">
+                   Colour(s)
+                </span>
+                <span class="list-data">
+                    Blue
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="vin">
+                    Vehicle identification number
+                </span>
+                <span class="list-data">
+                    1234567891011
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="family">
+                   Vehicle family identification number
+                </span>
+                <span class="list-data">
+                   1234567891011
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="purchase">
+                   Country vehicle purchased from
+                </span>
+                <span class="list-data">
+                    Spain
+                </span>
+            </li>
+        </ul>
+        
+    
+    
+
+</div>
+
+     
+                <a href="/regdetails.html" class="btn btn-primary">Continue</a>
+                </div>
+
+
+          
+            
+{% endblock %}

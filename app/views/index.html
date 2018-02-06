@@ -12,20 +12,22 @@
     <div class="col-12">
 
 
-        <h2 style="margin-bottom: 40px;">Vehicle summary</h2>
+        <h2>Vehicle summary</h2>
+        <br>
+        <br>
 
         <div class="form-group" id="registration_number">
             <label for="Registration_number">
         <div class="label-title">Registration number</div>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom1" name="regnum" maxlength="7">
         </div>
             <div class="form-group" id="listprice">
             <label for="listprice">
         <div class="label-title">List price</div>
-                <div class="input-group input-group-1-4">
+                <div class="input-group input-group-custom1">
                 <span class="input-group-addon">£</span>
                 
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" maxlength="9">
                 </div>
         </div>
     
@@ -52,20 +54,20 @@
 </div>
 
 
-<div class="col-2">
+<div class="col-3">
     <div class="form-group" id="make">
         <label for="make">
         <div class="label-title">Make</div>
         </label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="make" maxlength="20">
         </div>
     </div>
-    <div class="col-2">
+    <div class="col-3">
         <div class="form-group" id="model">
             <label for="model">
         <div class="label-title">Model</div>
         </label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="model" maxlength="20">
         </div>
     </div>
 </div>
@@ -73,31 +75,33 @@
             <label for="Engine_number" id="engine_number">
         <div class="label-title">Engine number</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom2" maxlength="20">
         </div>
          <div class="form-group" id="colours">
             <label for="colours">
         <div class="label-title">Colour(s)</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom2" maxlength="20">
         </div>
              <div class="form-group" id="vin">
             <label for="vin">
         <div class="label-title">Vehicle identification number</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom3" maxlength="11">
         </div>
                       <div class="form-group" id="vehicle_family">
             <label for="vehicle_family">
         <div class="label-title">Vehicle family identification number</div>
         </label>
-            <input type="text" class="form-control form-control-1-3">
+            <input type="text" class="form-control form-control-custom4" maxlength="19">
         </div>
             <div class="form-group" id="country_vehicle">
             <label for="country_vehicle">
         <div class="label-title">Country vehicle purchased from</div>
         </label>
-            <input type="text" class="form-control form-control-1-3">
+            <input type="text" class="form-control form-control-custom2" maxlength="20">
         </div>
-                <a href="/regdetails.html" class="btn btn-primary">Continue</a>
+                <a href="/summarycheck.html" class="btn btn-primary">Continue</a>
 {% endblock %}
+
+

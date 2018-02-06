@@ -1,0 +1,170 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Emissions detail check {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email-address@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/emissionsdetails" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+<h2>Emissions detail check</h2>
+<br>
+<br>
+        <ul class="list">
+            <li class="list-title-row">
+                <span class="list-title">
+                   Emission details
+                </span>
+                <span class="list-change">
+                    <a href="/emissionsdetails.html">Change</a>
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="co2">
+                    CO2 (g/km)
+                </span>
+                <span class="list-data">
+                    120
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="devation">
+                    Devation factor
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="wltp">
+                   WLTP CO2
+                </span>
+                <span class="list-data">
+                    120
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="hc">
+                  HC
+                </span>
+                <span class="list-data">
+                    111
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="particulates">
+                    Particualtes
+                </span>
+                <span class="list-data">
+                    1234
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="cO">
+                    CO
+                </span>
+                <span class="list-data">
+                    1.1
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="specco2">
+                   Specific CO2 emissions
+                </span>
+                <span class="list-data">
+                    1.1
+                </span>
+            </li>
+
+            
+            <li class="list-row">
+                <span class="list-property" id="nox">
+                   NOx
+                </span>
+                <span class="list-data">
+                    1.2345
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="verification">
+                   Verification factor
+                </span>
+                <span class="list-data">
+                    Plceholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="hcnox">
+                   HC + NOx
+                </span>
+                <span class="list-data">
+                    1.2345
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="wltp">
+                   WLTP test mass
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="energy">
+                   Electric energy consumption
+                </span>
+                <span class="list-data">
+                    1.4 KW
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="innovative">
+                   Code/group for innovative technology
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="nedc">
+                   (NEDC)
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="wltp2">
+                   (WLTP)
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="tec">
+                  Innovative technology group
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            
+           
+        </ul>
+        
+    
+    
+
+</div>
+
+
+
+     
+                <a href="/dimensiondetails.html" class="btn btn-primary">Continue</a>
+                </div>
+            
+{% endblock %}

@@ -7,27 +7,30 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/sounddetails" class="btn-back">Back</a>
+<a href="/sounddetailscheck" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2 style="margin-bottom: 40px;">SMMT details</h2>
+        <h2>SMMT details</h2>
+        <br>
+        <br>
+        
 
         <div class="form-group" id="original_dealer">
             <label for="original_dealer">
         <div class="label-title">Original dealer code</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom16" maxlength="10">
                 </div>
                  <div class="form-group" id="selling_dealer">
             <label for="selling_dealer">
         <div class="label-title">Selling dealer code</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom16" maxlength="10">
                 </div>
                  <label for="sales_type" id="sales_type">
         <div class="label-title">Sales type</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">    
+            <input type="text" class="form-control form-control-custom6" maxlength="4">    
                      </div>
                 
                 
@@ -35,5 +38,5 @@
             <br>
             <br>
             
-                <a href="/keeperdetails.html" class="btn btn-primary">Continue</a>
+                <a href="/smmtdetailscheck.html" class="btn btn-primary">Continue</a>
 {% endblock %}

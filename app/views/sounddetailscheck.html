@@ -1,0 +1,63 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Sound details check {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email-address@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/sounddetails" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+<h2>Sound details check</h2>
+<br>
+<br>
+        <ul class="list">
+            <li class="list-title-row">
+                <span class="list-title">
+                   Sound details
+                </span>
+                <span class="list-change">
+                    <a href="/sounddetails.html">Change</a>
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="stationary">
+                    Stationary sound level
+                </span>
+                <span class="list-data">
+                    1.4 db
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="engine">
+                    Engine speed sound level
+                </span>
+                <span class="list-data">
+                    10000 mm
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="driveby">
+                   Drive-by-sound level
+                </span>
+                <span class="list-data">
+                    2.0 db
+                </span>
+            </li>    
+           
+        </ul>
+        
+    
+    
+
+</div>
+
+
+
+     
+                <a href="/smmt.html" class="btn btn-primary">Continue</a>
+                </div>
+            
+{% endblock %}

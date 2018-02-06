@@ -1,0 +1,88 @@
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Vehicle specifications check {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+<div id="logout">
+    <a href="#">Log out</a>
+</div>
+<div id="user-account-email">
+    demo.email-address@dvla.gov.uk
+</div>
+{% endblock %} {% block content %}
+<a href="/vehiclespecs" class="btn-back">Back</a>
+<div class="row">
+    <div class="col-12">
+<h2>Vehicle specifications check</h2>
+<br>
+<br>
+        <ul class="list">
+            <li class="list-title-row">
+                <span class="list-title">
+                   Vehicle specifications
+                </span>
+                <span class="list-change">
+                    <a href="/vehiclespecs.html">Change</a>
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="type">
+                    Type of body/vehicle
+                </span>
+                <span class="list-data">
+                    Van
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="status">
+                    Vehicle automation status
+                </span>
+                <span class="list-data">
+                    Placeholder
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="wheelplan">
+                   Wheelplan
+                </span>
+                <span class="list-data">
+                    2 axle rigid
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="manufacturer">
+                   Manufacturer
+                </span>
+                <span class="list-data">
+                    Ford
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="cylinder">
+                    Cylinder capacity
+                </span>
+                <span class="list-data">
+                    1000cc
+                </span>
+            </li>
+            <li class="list-row">
+                <span class="list-property" id="seats">
+                   No of seats
+                </span>
+                <span class="list-data">
+                    4
+                </span>
+            </li>
+            
+           
+        </ul>
+        
+    
+    
+
+</div>
+
+
+
+     
+                <a href="/typeapprov.html" class="btn btn-primary">Continue</a>
+                </div>
+            
+{% endblock %}

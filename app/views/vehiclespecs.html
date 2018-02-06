@@ -7,55 +7,57 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/regdetails" class="btn-back">Back</a>
+<a href="/regdetailscheck" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2 style="margin-bottom: 40px;">Vehicle specifications</h2>
+        <h2>Vehicle specifications</h2>
+        <br>
+        <br>
         <div class="form-group" id="typeofbod">
             <label for="typeofbod">
         <div class="label-title">Type of body/vehicle</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom7" maxlength="28">
         </div>
             <div class="form-group" id="vehicleautomation">
             <label for="vehicleautomationr">
         <div class="label-title">Vehicle automation status</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom8" maxlength="3">
         </div>
             <div class="form-group" id="wheelplan">
             <label for="wheelplan">
         <div class="label-title">Wheelplan</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom2" maxlength="20">
         </div>
             <div class="form-group" id="manufacturer"> 
             <label for="manufacturer">
         <div class="label-title">Manufacturer</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom2" maxlength="20">
         </div>
                  <div class="form-group" id="typeoffuel">
             <label for="typeoffuel">
         <div class="label-title">Type of fuel</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom9" maxlength="15">
         </div>
             <div class="form-group" id="cylindercap">
             <label for="cylindercap">
         <div class="label-title">Cylinder capacity</div>
         </label>
-            <input type="text" class="form-control form-control-1-4">
+            <input type="text" class="form-control form-control-custom10" maxlength="5">
         </div>
                    <div class="form-group" id="cylindercap">
             <label for="cylindercap">
         <div class="label-title">No. of seats (inc driver)</div>
         </label>
-            <input type="text" class="form-control form-control-1-4"style="width:90px;">
+            <input type="text" class="form-control form-control-custom5" maxlength="2">
         </div>
 
 
 
-<a href="/typeapprov.html" class="btn btn-primary">Continue</a>
+<a href="/vehiclespecscheck.html" class="btn btn-primary">Continue</a>
     </div>
     {% endblock %}
