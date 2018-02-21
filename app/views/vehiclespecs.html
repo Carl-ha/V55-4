@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Vehicle specifications {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Vehicle specifications {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,57 +8,81 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/regdetailscheck" class="btn-back">Back</a>
+
+<a href="/regdetails" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Vehicle specifications</h2>
-        <br>
-        <br>
-<!--type_of_body-->
-        <div class="form-group" id="typeofbod">
+
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Vehicle specifications</h2>
+
+
+        <!--type_of_body-->
+
+        <div class="form-group-cust">
             <label for="typeofbod">
-        <div class="label-title">Type of body/vehicle</div>
-        </label>
-            <input type="text" class="form-control form-control-custom7" maxlength="28">
+                <div class="label-title">Type of body/vehicle</div>
+            </label>
+            <input type="text" class="form-control form-control-custom7" maxlength="28" id="typeofbod">
         </div>
-<!--vehicle-->
-            <div class="form-group" id="vehicleautomation">
+
+        <!--vehicle-->
+
+        <div class="form-group-cust">
             <label for="vehicleautomationr">
-        <div class="label-title">Vehicle automation status</div>
-        </label>
-            <input type="text" class="form-control form-control-custom8" maxlength="3">
+                <div class="label-title">Vehicle automation status</div>
+            </label>
+            <input type="text" class="form-control form-control-custom8" maxlength="3" id="vehicleauto">
         </div>
-<!--wheelplan-->
-            <div class="form-group" id="wheelplan">
+
+        <!--wheelplan-->
+
+        <div class="form-group-cust" id="wheelplan">
             <label for="wheelplan">
-        <div class="label-title">Wheelplan</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
+                <div class="label-title">Wheelplan</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="wheelplan">
         </div>
-<!--manufacturer-->
-            <div class="form-group" id="manufacturer"> 
+
+        <!--manufacturer-->
+
+        <div class="form-group-cust">
             <label for="manufacturer">
-        <div class="label-title">Manufacturer</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
+                <div class="label-title">Manufacturer</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="manufacturer">
         </div>
-<!--cylindercap-->
-            <div class="form-group" id="cylindercap">
+
+        <!--cylindercap-->
+
+        <div class="form-group-cust">
             <label for="cylindercap">
-        <div class="label-title">Cylinder capacity</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+                <div class="label-title">Cylinder capacity</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="cylindercap">
         </div>
-<!--seats-->
-                   <div class="form-group" id="seats">
+
+        <!--seats-->
+
+        <div class="form-group-cust">
             <label for="seats">
-        <div class="label-title">No. of seats (inc driver)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom5" maxlength="2">
+                <div class="label-title">No. of seats (inc driver)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom5" maxlength="2" id="seats">
         </div>
 
 
+        <div class="form-group">
+            <button class="btn btn-primary">Contiune</button>
+        </div>
 
-<a href="/vehiclespecscheck.html" class="btn btn-primary">Continue</a>
     </div>
-    {% endblock %}
+    <script type="text/javascript">
+        $(".btn.btn-primary").click(function () {
+            // Enter function name here
+            checkAnswers();
+        });
+        function checkAnswers() {
+            go('typeapprov');
+        }
+    </script> {% endblock %}

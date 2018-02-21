@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Sound details {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Sound details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,36 +8,55 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/dimensiondetailscheck" class="btn-back">Back</a>
+
+<a href="/dimensiondetails" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Sound details</h2>
-        <br>
-        <br>
-<!--stationary_sound-->
-        <div class="form-group" id="stationary_sound">
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Sound details</h2>
+
+
+        <!--stationary_sound-->
+
+        <div class="form-group">
             <label for="stationary_sound">
-        <div class="label-title">Stationary sound level (dB(A))</div>
-        </label>
-            <input type="text" class="form-control form-control-custom8" maxlength="3">
-                </div>
-<!--engine_speed_sound-->
-                 <div class="form-group" id="engine_speed">
-            <label for="engine_speed">
-        <div class="label-title">Engine speed sound level (min-1)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
-                </div>
-<!--drive_by_sound-->
-                 <label for="drive_by" id="drive_by">
-        <div class="label-title">Drive-by sound level (dB(A))</div>
-        </label>
-            <input type="text" class="form-control form-control-custom5" maxlength="2">  
-                     </div>
-                
-               
+                <div class="label-title">Stationary sound level (dB(A))</div>
+            </label>
+            <input type="text" class="form-control form-control-custom8" maxlength="3" id="statsound">
         </div>
-            <br>
-            <br>
-                <a href="/sounddetailscheck.html" class="btn btn-primary">Continue</a>
-{% endblock %}
+
+        <!--engine_speed_sound-->
+
+        <div class="form-group">
+            <label for="engine_speed">
+                <div class="label-title">Engine speed sound level (min-1)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="enginespeed">
+        </div>
+
+        <!--drive_by_sound-->
+        <div class="form-group">
+            <label for="drive_by">
+                <div class="label-title">Drive-by sound level (dB(A))</div>
+            </label>
+            <input type="text" class="form-control form-control-custom5" maxlength="2" id="driveby">
+
+        </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary">Contiune</button>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+        $(".btn.btn-primary").click(function () {
+            // Enter function name here
+            checkAnswers();
+        });
+        function checkAnswers() {
+            go('smmt');
+        }
+    </script> {% endblock %}

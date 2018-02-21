@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Emissions details {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title
+%} Emissions details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,147 +8,193 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %}{% block content %}
-<a href="/typeapprovcheck" class="btn-back">Back</a>
+
+<a href="/typeapprov" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Emissions details</h2>
-        <br>
-        <br>
+
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Emissions details</h2>
+
+
         <!--co2-->
-        <div class="form-group" id="co2">
+
+        <div class="form-group-cust">
             <label for="co2">
-        <div class="label-title">CO2 (g/km)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">CO2 (g/km)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="co2">
         </div>
+
         <!--devation_factor-->
-             <div class="form-group" id="dev_factor">
+
+        <div class="form-group-cust">
             <label for="devation_factor">
-        <div class="label-title">Devation factor</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
+                <div class="label-title">Devation factor</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="devfactor">
         </div>
+
         <!--totalwltp-->
-        <div class="form-group" id="totalwltpplus">
+
+        <div class="form-group-cust">
             <label for="totalwltpplus">
-        <div class="label-title">Total WLTP CO2 emissions savings due to eco - innovations</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
+                <div class="label-title">Total WLTP CO2 emissions savings due to eco - innovations</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="totalwltp">
         </div>
+
         <!--hc-->
-        <div class="form-group" id="hc">
+
+        <div class="form-group-cust">
             <label for="hc">
-        <div class="label-title">HC (g/km or g/kWh)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">HC (g/km or g/kWh)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="hc">
         </div>
+
         <!--particulates-->
-            <div class="form-group" id="particulates">
+
+        <div class="form-group-cust">
             <label for="particualtes">
-        <div class="label-title">Particulates (pmg/km or g/kWh)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">Particulates (pmg/km or g/kWh)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="particulates">
         </div>
+
         <!--co-->
-            <div class="form-group" id="co">
+
+        <div class="form-group-cust">
             <label for="co">
-        <div class="label-title">CO (g/km or g/kWh)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">CO (g/km or g/kWh)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="co">
         </div>
+
         <!--specific_co2-->
-            <div class="form-group" id="specific_co2">
+
+        <div class="form-group-cust">
             <label for="specific_co2">
-        <div class="label-title">Specific CO2 emissions (g/km)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">Specific CO2 emissions (g/km)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="specco2">
         </div>
+
         <!--nox-->
-            <div class="form-group" id="nox">
+
+        <div class="form-group-cust">
             <label for="nox">
-        <div class="label-title">NOx (g/km or g/kWh)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">NOx (g/km or g/kWh)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="nox">
         </div>
+
         <!--verfication_factor-->
-            <div class="form-group" id="veritication_factor">
+
+        <div class="form-group-cust">
             <label for="verification_factor">
-        <div class="label-title">Verification factor</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">Verification factor</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="vertfactor">
         </div>
+
         <!--hc_nox-->
-            <div class="form-group" id="hc_nox">
+
+        <div class="form-group-cust">
             <label for="hc_nox">
-        <div class="label-title">HC + NOx (g/km)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">HC + NOx (g/km)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="hcnox">
         </div>
-        <!--wltop_test-->
-            <div class="form-group" id="wltp_test">
+
+        <!--wltp_test-->
+
+        <div class="form-group-cust">
             <label for="wltp_test">
-        <div class="label-title">WLTP test mass</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">WLTP test mass</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="wltptest">
         </div>
+
         <!--electric_energy-->
-            <div class="form-group" id="electric_energy">
+
+        <div class="form-group-cust">
             <label for="electric_energy">
-        <div class="label-title">Electric energy consumption</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">
+                <div class="label-title">Electric energy consumption</div>
+            </label>
+            <input type="text" class="form-control form-control-custom15" maxlength="6" id="elecenergy">
         </div>
+
         <!--innovative_tech-->
-            <div class="form-group" id="innovative_tech">
+
+        <div class="form-group-cust">
             <label for="innovative_tech">
-        <div class="label-title">Code/Group for innovative technology</div>
-        </label>
-            <input type="text" class="form-control form-control-custom13" maxlength="25">
+                <div class="label-title">Code/Group for innovative technology</div>
+            </label>
+            <input type="text" class="form-control form-control-custom13" maxlength="25" id="innotech">
         </div>
-        <!--emissions_reducation-->
-               <div class="label-title">Emissions reduction through innovative technologies (a) + (b)</div> 
-                <br>
+
+        <!--emissions_reduction-->
+
+        <div class="label-title">Emissions reduction through innovative technologies (a) + (b)</div>
+        <br>
         <!--nedc-->
-                <div class="row">
-                 <div class="col-cust2" id="nedc">
-            <label for="nedc">
-        <div class="label-title">(NEDC)</div>
-        </label>
+
+        <div class="row">
+            <div class="col-cust2">
+                <label for="nedc">
+                    <div class="label-title">(NEDC)</div>
+                </label>
                 <div class="input-group">
-            <input type="text" class="form-control" maxlength="6">
+                    <input type="text" class="form-control" maxlength="6" id="nedc">
                 </div>
-        </div>
-        <!--wltp-->
-     <div class="col-cust2" id="wltp">
-            <label for="wltp">
-        <div class="label-title">(WLTP)</div>
-        </label>
-                <div class="input-group">
-                    
-                
-            <input type="text" class="form-control" maxlength="6">
             </div>
+            <!--wltp-->
+
+            <div class="col-cust2">
+                <label for="wltp">
+                    <div class="label-title">(WLTP)</div>
+                </label>
+
+                <div class="input-group">
+
+
+                    <input type="text" class="form-control" maxlength="6" id="wltp">
+
                 </div>
+            </div>
         </div>
-         <br>
-         <br>
-         <!--innovative_group-->
-            <div class="form-group" id="innovative_tech">
+        <br>
+        <br>
+
+        <!--innovative_group-->
+
+        <div class="form-group-cust">
             <label for="innovative_tech">
-        <div class="label-title">Innovative technology or group of innovative technologies</div>
-        </label>
-            <input type="text" class="form-control form-control-custom13" maxlength="25">
+                <div class="label-title">Innovative technology or group of innovative technologies</div>
+            </label>
+            <input type="text" class="form-control form-control-custom13" maxlength="25" id="innotech">
         </div>
-                
-                     
-                
-                
-                
-                
-              
-       
-                  <a href="/emissionsdetailscheck.html" class="btn btn-primary">Continue</a>
-                     </div>
-                     </div>
-                
-    {% endblock %}
+
+        <div class="form-group">
+            <button class="btn btn-primary">Contiune</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+<script type="text/javascript">
+    $(".btn.btn-primary").click(function () {
+        // Enter function name here
+        checkAnswers();
+    });
+    function checkAnswers() {
+        go('dimensiondetails');
+    }
+</script> {% endblock %}

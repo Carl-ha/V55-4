@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Type approval details {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Type approval details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,63 +8,90 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/vehiclespecscheck" class="btn-back">Back</a>
+
+<a href="/vehiclespecs" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Type approval details</h2>
-        <br>
-        <br>
-<!--type_approval-->
-        <div class="form-group" id="type_approval">
+
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Type approval details</h2>
+
+
+        <!--type_approval-->
+
+        <div class="form-group-cust">
             <label for="type_approval">
-        <div class="label-title">Type approval number / category</div>
-        </label>
-            <input type="text" class="form-control form-control-custom11" maxlength="21">
+                <div class="label-title">Type approval number / category</div>
+            </label>
+            <input type="text" class="form-control form-control-custom11" maxlength="21" id="typeapprov">
         </div>
-<!--type-->
-            <div class="form-group" id="type">
+
+        <!--type-->
+
+        <div class="form-group-cust">
             <label for="type">
-        <div class="label-title">Type</div>
-        </label>
-            <input type="text" class="form-control form-control-custom9" maxlength="15">
+                <div class="label-title">Type</div>
+            </label>
+            <input type="text" class="form-control form-control-custom9" maxlength="15" id="type">
         </div>
-<!--version-->
-            <div class="form-group" id="version">
+
+        <!--version-->
+
+        <div class="form-group-cust">
             <label for="version">
-        <div class="label-title">Version</div>
-        </label>
-            <input type="text" class="form-control form-control-custom12" maxlength="35">
+                <div class="label-title">Version</div>
+            </label>
+            <input type="text" class="form-control form-control-custom12" maxlength="35" id="version">
         </div>
-<!--variant-->
-            <div class="form-group" id="variant">
+
+        <!--variant-->
+
+        <div class="form-group-cust">
             <label for="variant">
-        <div class="label-title">Variant</div>
-        </label>
-            <input type="text" class="form-control form-control-custom13" maxlength="25">
+                <div class="label-title">Variant</div>
+            </label>
+            <input type="text" class="form-control form-control-custom13" maxlength="25" id="variant">
         </div>
-<!--eurostatus-->
-  <div class="form-group" id="eurostatus">
+
+        <!--eurostatus-->
+
+        <div class="form-group-cust">
             <label for="eurostatus">
-        <div class="label-title">Euro status</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">
+                <div class="label-title">Euro status</div>
+            </label>
+            <input type="text" class="form-control form-control-custom14" maxlength="30" id="eurostatus">
         </div>
-<!--eurostatusdir-->
-      <div class="form-group" id="eurostatusdir">
+
+        <!--eurostatusdir-->
+
+        <div class="form-group-cust">
             <label for="eurostatusdir">
-        <div class="label-title">Euro status directive number</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">
+                <div class="label-title">Euro status directive number</div>
+            </label>
+            <input type="text" class="form-control form-control-custom14" maxlength="30" id="eurostatusdir">
         </div>
-<!--rde-->
-           <div class="form-group" id="rde">
+
+        <!--rde-->
+
+        <div class="form-group-cust">
             <label for="rde">
-        <div class="label-title">RDE step1/step2</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+                <div class="label-title">RDE step1/step2</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="rde">
         </div>
-    
-        <a href="/typeapprovcheck" class="btn btn-primary">Continue</a>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Contiune</button>
+        </div>
+
     </div>
 
-    {% endblock %}
+    <script type="text/javascript">
+        $(".btn.btn-primary").click(function () {
+            // Enter function name here
+            checkAnswers();
+        });
+        function checkAnswers() {
+            go('emissionsdetails');
+        }
+    </script> {% endblock %}

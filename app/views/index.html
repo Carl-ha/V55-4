@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title %} Vehicle summary {% endblock %} {% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %} {% block page_title
+%} Vehicle summary {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -11,104 +12,143 @@
 <div class="row">
     <div class="col-12">
 
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Vehicle summary</h2>
 
-        <h2>Vehicle summary</h2>
-        <br>
-        <br>
-<!--reg_number-->
-        <div class="form-group" id="registration_number">
-            <label for="Registration_number">
-        <div class="label-title">Registration number</div>
-            <input type="text" class="form-control form-control-custom1" name="regnum" maxlength="7">
+
+        <!--reg_number-->
+
+        <div class="form-group">
+            <label for="Registration_number"></label>
+            <div class="label-title">Registration number</div>
+            <input type="text" class="form-control form-control-custom1" name="regnum" maxlength="7" id="regnum">
         </div>
+
         <!--listprice-->
-            <div class="form-group" id="listprice">
-            <label for="listprice">
-        <div class="label-title">List price</div>
-                <div class="input-group input-group-custom1">
+
+        <div class="form-group">
+            <label for="listprice"></label>
+            <div class="label-title">List price</div>
+            <div class="input-group input-group-custom1">
                 <span class="input-group-addon">£</span>
-                
-            <input type="text" class="form-control" maxlength="9">
-                </div>
-        </div>
-    <!--vehicle_drive-->
-    <form>
-    <div class="form-group inline" id="drive">
-        <fieldset>
-            <legend>
-                Is the vehicle left or right hand drive ?
-            </legend>
-      
-            <div class="multiple-choice">
-                <input id="radio-inline-3" type="radio" name="radio-group" value="rh" id="rh">
-                <label for="radio-inline-3">LH</label>
-        </div>
-        <div class="multiple-choice">
-            <input id="radio-inline-4" type="radio" name="radio-group" value="lh" id="lh">
-            <label for="radio-inline-4">RH</label>
+                <input type="text" class="form-control" maxlength="9" id="listprice">
+            </div>
         </div>
 
-        </fieldset>
+        <!--vehicle_drive-->
+
+        <form>
+
+            <div class="form-group inline">
+
+                <fieldset>
+
+                    <legend>
+                        Is the vehicle left or right hand drive ?
+                    </legend>
+
+                    <div class="multiple-choice">
+                        <input id="radio-inline-3" type="radio" name="radio-group" value="rh">
+                        <label for="radio-inline-3">LH</label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input id="radio-inline-4" type="radio" name="radio-group" value="lh">
+                        <label for="radio-inline-4">RH</label>
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </form>
+
     </div>
-    </form>
 
-</div>
+    <div class="col-4">
 
-<!--make-->
-<div class="col-cust1">
-    <div class="form-group" id="make">
-        <label for="make">
-        <div class="label-title">Make</div>
-        </label>
-            <input type="text" class="form-control" name="make" maxlength="20">
+        <!--make-->
+
+        <div class="form-group">
+            <label for="make">
+                <div class="label-title">Make</div>
+            </label>
+            <input type="text" class="form-control" name="make" maxlength="20" id="make">
         </div>
+
     </div>
-    <!--model-->
-    <div class="col-cust1">
-        <div class="form-group" id="model">
+
+    <div class="col-4">
+
+        <!--model-->
+
+        <div class="form-group">
             <label for="model">
-        <div class="label-title">Model</div>
-        </label>
-            <input type="text" class="form-control" name="model" maxlength="20">
+                <div class="label-title">Model</div>
+            </label>
+            <input type="text" class="form-control" name="model" maxlength="20" id="model">
         </div>
+
+    </div>
+
+    <div class="col-12">
+
+        <!--engine_num-->
+
+        <div class="form-group">
+            <label for="Engine_number">
+                <div class="label-title">Engine number</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="enginenum">
+        </div>
+
+        <!--colour-->
+
+        <div class="form-group">
+            <label for="colours">
+                <div class="label-title">Colour(s)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="colours">
+        </div>
+
+        <!--vin-->
+
+        <div class="form-group">
+            <label for="vin">
+                <div class="label-title">Vehicle identification number</div>
+            </label>
+            <input type="text" class="form-control form-control-custom3" maxlength="11" id="vin">
+        </div>
+
+        <!--vehicle_family-->
+
+        <div class="form-group">
+            <label for="vehicle_family">
+                <div class="label-title">Vehicle family identification number</div>
+            </label>
+            <input type="text" class="form-control form-control-custom4" maxlength="19" id="vehilcefam">
+        </div>
+
+        <!--country_vehicle-->
+
+        <div class="form-group">
+            <label for="countryveh">
+                <div class="label-title">Country vehicle purchased from</div>
+            </label>
+            <input type="text" class="form-control form-control-custom2" maxlength="20" id="countryveh">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Contiune</button>
+        </div>
+
     </div>
 </div>
-<!--engine_num-->
-     <div class="form-group">
-            <label for="Engine_number" id="engine_number">
-        <div class="label-title">Engine number</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
-        </div>
-<!--colour-->
-         <div class="form-group" id="colours">
-            <label for="colours">
-        <div class="label-title">Colour(s)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
-        </div>
-<!--vin-->
-             <div class="form-group" id="vin">
-            <label for="vin">
-        <div class="label-title">Vehicle identification number</div>
-        </label>
-            <input type="text" class="form-control form-control-custom3" maxlength="11">
-        </div>
-<!--vehicle_family-->
-                      <div class="form-group" id="vehicle_family">
-            <label for="vehicle_family">
-        <div class="label-title">Vehicle family identification number</div>
-        </label>
-            <input type="text" class="form-control form-control-custom4" maxlength="19">
-        </div>
-<!--country_vehicle-->
-            <div class="form-group" id="country_vehicle">
-            <label for="country_vehicle">
-        <div class="label-title">Country vehicle purchased from</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
-        </div>
-                <a href="/summarycheck.html" class="btn btn-primary">Continue</a>
-{% endblock %}
 
-
+<script type="text/javascript">
+    $(".btn.btn-primary").click(function () {
+        // Enter function name here
+        checkAnswers();
+    });
+    function checkAnswers() {
+        go('regdetails');
+    }
+</script> {% endblock %}

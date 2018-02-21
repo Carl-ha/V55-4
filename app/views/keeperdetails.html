@@ -1,94 +1,126 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Keeper details {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Keeper details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
-    <a href="#">Log out</a>
+        <a href="#">Log out</a>
 </div>
 <div id="user-account-email">
-    demo.email@dvla.gov.uk
+        demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/smmtdetailscheck" class="btn-back">Back</a>
+
+<a href="/smmt" class="btn-back">Back</a>
 <div class="row">
-    <div class="col-12">
-        <h2>Keeper details</h2>
-        <br>
-        <br>
-<!--title-->
-        <div class="form-group" id="title">
-            <label for="Title">
-        <div class="label-title">Title</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">
-                <br>
-                <br>
-<!--company_name-->
-        <div class="form-group" id="company_name">   
-            <label for="company_name"> 
-        <div class="label-title">Company name</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">
-                <br>
-                <br>
-<!--first_name-->
-              <div class="form-group" id="first_name">      
-                 <label for="first_name">
-        <div class="label-title">First name(s)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">          
-                     </div> 
-<!--surname-->
-            <div class="form-group" id="surname">      
-                 <label for="surname">
-        <div class="label-title">Surname</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">          
-                     </div> 
-<!--fleet_num-->
-                <div class="form-group" id="dvla_fleet">      
-                 <label for="dvla_fleet">
-        <div class="label-title">Dvla fleet number</div>
-        </label>
-            <input type="text" class="form-control form-control-custom15" maxlength="6">          
-                     </div>
-<!--date_of_birth-->
-                    <div class="form-group" id="dob">    
-            <label for="date-of-birth">
-        <div class="label-title">Date of birth</div>
-        </label>
-            <input type="text" class="form-control form-control-custom5" placeholder="DD" id="day" maxlength="2">
-                <input type="text" class="form-control form-control-custom5" placeholder="MM" id="month" maxlength ="2">
-                <input type="text" class="form-control form-control-custom6" placeholder="YYYY" id"year" maxlength="4">
-                </div>
-<!--address-->
-                         <div class="form-group" id="address">      
-                 <label for="address">
-        <div class="label-title">Address</div>
-        </label>
-                    <input type="text" class="form-control form-control-custom14" id="addressline1" maxlength="30"><br>
-                     <input type="text" class="form-control form-control-custom14" id="addressline2" maxlength="30"><br>
-                     <input type="text" class="form-control form-control-custom14" id="addressline3" maxlength="30"><br>
-                     <input type="text" class="form-control form-control-custom14" id="addressline4" maxlength="30"><br>
-                     </div>
-<!--post_town-->             
-        <div class="form-group" id="post-town">
-            <label for="post-town">
-        <div class="label-title">Post town</div>
-        </label>
-            <input type="text" class="form-control form-control-custom14" maxlength="30">
-                <br>
-                <br>
-<!--postcode-->
-                 <div class="form-group" id="post-code">
-            <label for="post-code">
-        <div class="label-title">Post code</div>
-        </label>
-            <input type="text" class="form-control form-control-custom1" maxlength="7">
-      
-</div>
-                             
-                  
-                  
-                
-        </div>
-                <a href="/keeperdetailscheck" class="btn btn-primary">Continue</a>
-{% endblock %}
+        <div class="col-12">
+
+                <h4 class="heading-small-v2">V55/4 Input</h4>
+                <h2 class="heading-extra-large-v2">Keeper details</h2>
+
+
+                <!--title-->
+
+                <div class="form-group-cust">
+                        <label for="Title">
+                                <div class="label-title">Title</div>
+                        </label>
+                        <input type="text" class="form-control form-control-custom14" maxlength="30" id="title">
+
+
+                        <!--company_name-->
+
+                        <div class="form-group-cust">
+                                <label for="company_name">
+                                        <div class="label-title">Company name</div>
+                                </label>
+                                <input type="text" class="form-control form-control-custom14" maxlength="30" id="compname">
+
+
+                                <!--first_name-->
+
+                                <div class="form-group-cust">
+                                        <label for="first_name">
+                                                <div class="label-title">First name(s)</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom14" maxlength="30" id="firstname">
+                                </div>
+
+                                <!--surname-->
+
+                                <div class="form-group-cust">
+                                        <label for="surname">
+                                                <div class="label-title">Surname</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom14" maxlength="30" id="surname">
+                                </div>
+
+                                <!--fleet_num-->
+
+                                <div class="form-group-cust">
+                                        <label for="dvla_fleet">
+                                                <div class="label-title">Dvla fleet number</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom15" maxlength="6" id="dvlafleet">
+                                </div>
+
+                                <!--date_of_birth-->
+
+                                <div class="form-group-cust">
+                                        <label for="date-of-birth">
+                                                <div class="label-title">Date of birth</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom5" placeholder="DD" id="day" maxlength="2">
+                                        <input type="text" class="form-control form-control-custom17" placeholder="MM" id="month" maxlength="2">
+                                        <input type="text" class="form-control form-control-custom6" placeholder="YYYY" id "year" maxlength="4">
+                                </div>
+
+                                <!--address-->
+
+                                <div class="form-group-cust">
+                                        <label for="address">
+                                                <div class="label-title">Address</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom14" id="addressline1" maxlength="30" id="addline1">
+                                        <br>
+                                        <input type="text" class="form-control form-control-custom14" id="addressline2" maxlength="30" id="addline2">
+                                        <br>
+                                        <input type="text" class="form-control form-control-custom14" id="addressline3" maxlength="30" id="addline3">
+                                        <br>
+                                        <input type="text" class="form-control form-control-custom14" id="addressline4" maxlength="30" id="addline4">
+                                        <br>
+                                </div>
+
+                                <!--post_town-->
+
+                                <div class="form-group-cust">
+                                        <label for="post-town">
+                                                <div class="label-title">Post town</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom14" maxlength="30" id="posttown">
+                                </div>
+
+
+                                <!--postcode-->
+
+                                <div class="form-group-cust" id="post-code">
+                                        <label for="post-code">
+                                                <div class="label-title">Post code</div>
+                                        </label>
+                                        <input type="text" class="form-control form-control-custom1" maxlength="7" id="postcode">
+                                </div>
+
+
+
+
+                        </div>
+                        <div class="form-group">
+                                <button class="btn btn-primary">Contiune</button>
+                        </div>
+                        <script type="text/javascript">
+                                $(".btn.btn-primary").click(function () {
+                                        // Enter function name here
+                                        checkAnswers();
+                                });
+                                function checkAnswers() {
+                                        go('index');
+                                }
+                        </script> {% endblock %}

@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Dimension details {% endblock %}{% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Dimension details {% endblock %}{% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,189 +8,241 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %} {% block content %}
-<a href="/emissionsdetailscheck" class="btn-back">Back</a>
+
+<a href="/emissionsdetails" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Dimension details</h2>
-        <br>
-        <br>
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Dimension details</h2>
+
+
+
         <!-- wheelbase -->
-        <div class="form-group" id="wheelbase">
+
+        <div class="form-group-cust">
             <label for="wheelbase">
-        <div class="label-title">Wheelbase (mm)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom6" maxlength="4">
-        </div>
-        <!-- width -->
-            <div class="form-group" id="width">
-            <label for="width">
-        <div class="label-title">Width (mm)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom6" maxlength="4">
-        </div>
-        <!--length -->
-                <div class="form-group" id="length">
-            <label for="length">
-        <div class="label-title">Length (mm)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom6" maxlength="4">
-        </div>
-        <!--rev_Weight-->
-                    <div class="form-group" id="revweight">
-            <label for="rev_weight">
-        <div class="label-title">Revenue weight (kg)</div>
+                <div class="label-title">Wheelbase (mm)</div>
             </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+            <input type="text" class="form-control form-control-custom6" maxlength="4" id="wheelbase">
         </div>
+
+        <!-- width -->
+
+        <div class="form-group-cust">
+            <label for="width">
+                <div class="label-title">Width (mm)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom6" maxlength="4" id="width">
+        </div>
+
+        <!--length -->
+
+        <div class="form-group-cust">
+            <label for="length">
+                <div class="label-title">Length (mm)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom6" maxlength="4" id="length">
+        </div>
+
+        <!--rev_Weight-->
+
+        <div class="form-group-cust">
+            <label for="rev_weight">
+                <div class="label-title">Revenue weight (kg)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="revweight">
+        </div>
+
         <!--max_permissable-->
-                    <div class="form-group" id="max_permis">
-             <label for="max_permis">
-        <div class="label-title">Max permisible mass (kg)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+
+        <div class="form-group-cust">
+            <label for="max_permis">
+                <div class="label-title">Max permisible mass (kg)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="maxpermis">
         </div>
+
         <!--unladen_weight-->
-            <div class="form-group" id="unladen_weight">
+
+        <div class="form-group-cust">
             <label for="unladen_weight">
-        <div class="label-title">Unladen weight (kg)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+                <div class="label-title">Unladen weight (kg)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="unladenweight">
         </div>
+
         <!--max_net-->
-        <div class="form-group">
-            <label for="max_net" id="max_net">
-        <div class="label-title">Max net power (kW)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom8" maxlength="3">
+
+        <div class="form-group-cust">
+            <label for="max_net">
+                <div class="label-title">Max net power (kW)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom8" maxlength="3" id="maxnet">
         </div>
+
         <!--mass_in_service-->
-        <div class="form-group" id="mass_in_service">
+
+        <div class="form-group-cust">
             <label for="mass_in_service">
-        <div class="label-title">Mass in service (kg)</div>
-        </label>
-            <input type="text" class="form-control form-control-custom10" maxlength="5">
+                <div class="label-title">Mass in service (kg)</div>
+            </label>
+            <input type="text" class="form-control form-control-custom10" maxlength="5" id="massinserv">
         </div>
+
         <!--track_width_axles-->
-        <div class="label-title">Track width axel(s) (mm) (1) (2) (3)</div> 
+
+        <div class="label-title">Track width axel(s) (mm) (1) (2) (3)</div>
         <br>
+
         <!--trackwidthbox1min-->
+
         <div class="row">
-         <div class="col-cust3" id="min1">
-    <label for="min1">
-<div class="label-title">Min</div>
-</label>
-        <div class="input-group">
-    <input type="text" class="form-control" maxlength="4">
+            <div class="col-cust3">
+                <label for="min1">
+                    <div class="label-title">Min</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="min1">
+                </div>
+            </div>
+
+            <!--trackwidthbox1max-->
+
+            <div class="col-cust3" id="max1">
+                <label for="max1">
+                    <div class="label-title">Max</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="max1">
+                </div>
+            </div>
         </div>
-</div>
-<!--trackwidthbox1max-->
-<div class="col-cust3" id="max1">
-    <label for="max1">
-<div class="label-title">Max</div>
-</label>
-        <div class="input-group"> 
-    <input type="text" class="form-control" maxlength="4">
+        <br>
+
+        <!--trackwidth2min-->
+
+        <div class="row">
+            <div class="col-cust3">
+                <label for="min2">
+                    <div class="label-title">Min</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="min2">
+                </div>
+            </div>
+
+            <!--trackwidth2max-->
+
+            <div class="col-cust3">
+                <label for="max2">
+                    <div class="label-title">Max</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="max2">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--trackwidth3min-->
+
+        <div class="row">
+            <div class="col-cust3">
+                <label for="min3">
+                    <div class="label-title">Min</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="min3">
+                </div>
+            </div>
+
+            <!--trackwidth3max-->
+
+            <div class="col-cust3">
+                <label for="max3">
+                    <div class="label-title">Max</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="max3">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--trackwidth4min-->
+
+        <div class="row">
+            <div class="col-cust3">
+                <label for="min4">
+                    <div class="label-title">Min</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="min4">
+                </div>
+            </div>
+
+            <!--trackwidth4max-->
+
+            <div class="col-cust3">
+                <label for="max4">
+                    <div class="label-title">Max</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="4" id="max4">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!--tech_mass_trailer-->
+
+        <div class="label-title">Technical permissable maximum towable mass of the trailer (Kg)</div>
+        <br>
+        <div class="row">
+            <div class="col-cust4">
+                <label for="braked">
+
+                    <!--tech_mass_trailer_braked-->
+
+                    <div class="label-title">Braked</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="5" id="braked">
+                </div>
+            </div>
+
+            <!--tech_mass_trailer_unbraked-->
+
+            <div class="col-cust4" id="unbraked">
+                <label for="unbraked">
+                    <div class="label-title">Unbraked</div>
+                </label>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="5" id="unbraked">
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
-        </div>  
-</div>
-<br>
-<!--trackwidth2min-->
-<div class="row">
-    <div class="col-cust3" id="min2">
-<label for="min2">
-<div class="label-title">Min</div>
-</label>
-   <div class="input-group">
-<input type="text" class="form-control" maxlength="4">
-   </div>
-</div>
-<!--trackwidth2max-->
-<div class="col-cust3" id="max2">
-<label for="max2">
-<div class="label-title">Max</div>
-</label>
-   <div class="input-group">  
-<input type="text" class="form-control" maxlength="4">
-</div>
-   </div>
-</div>
-<br>
-<!--trackwidth3min-->
-<div class="row">
-    <div class="col-cust3" id="min3">
-<label for="min3">
-<div class="label-title">Min</div>
-</label>
-   <div class="input-group">
-<input type="text" class="form-control" maxlength="4">
-   </div>
-</div>
-<!--trackwidth3max-->
-<div class="col-cust3" id="max3">
-<label for="max3">
-<div class="label-title">Max</div>
-</label>
-   <div class="input-group">   
-<input type="text" class="form-control" maxlength="4">
-</div>
-   </div>
-</div>
-<br>
-<!--trackwidth4min-->
-<div class="row">
-    <div class="col-cust3" id="min4">
-<label for="min4">
-<div class="label-title">Min</div>
-</label>
-   <div class="input-group">
-<input type="text" class="form-control" maxlength="4">
-   </div>
-</div>
-<!--trackwidth4max-->
-<div class="col-cust3" id="max4">
-<label for="max4">
-<div class="label-title">Max</div>
-</label>
-   <div class="input-group">   
-<input type="text" class="form-control" maxlength="4">
-</div>
-   </div>
-</div>
-<br>
-<br>
-<!--tech_mass_trailer-->
-<div class="label-title">Technical permissable maximum towable mass of the trailer (Kg)</div> 
-<br>
-<div class="row">
- <div class="col-cust4" id="braked">
-<label for="braked">
-<!--tech_mass_trailer_braked-->
-<div class="label-title">Braked</div>
-</label>
-<div class="input-group">
-<input type="text" class="form-control" maxlength="5">
-</div>
-</div>
-<!--tech_mass_trailer_unbraked-->
-<div class="col-cust4" id="unbraked">
-<label for="unbraked">
-<div class="label-title">Unbraked</div>
-</label>
-<div class="input-group">
-<input type="text" class="form-control" maxlength="5">
-</div>
+
+    <br>
+    <br>
+    <br>
+
 </div>
 
-            </div> 
-            
-             
-            </div>
-            
-<br>
-    <br>
-    <br>
-    </div>
-              <a href="/dimensiondetailscheck.html" class="btn btn-primary">Continue</a>
-                
-           
-         {% endblock %}
+<div class="form-group">
+    <button class="btn btn-primary">Contiune</button>
+</div>
+<script type="text/javascript">
+    $(".btn.btn-primary").click(function () {
+        // Enter function name here
+        checkAnswers();
+    });
+    function checkAnswers() {
+        go('sounddetails');
+    }
+</script> {% endblock %}

@@ -1,5 +1,6 @@
-{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %} Registration details {% endblock %} {% block header_application_title %}
-<a href="/index" title="Service home">V55/4 Input</a> {% endblock %}{% block header_user_account %}
+{% extends 'layout-fixed.html' %} {% block head %} {% include 'includes/head.html' %} {% endblock %}{% block page_title %}
+Registration details {% endblock %} {% block header_application_title %}
+<a href="/index" title="Service home"></a> {% endblock %}{% block header_user_account %}
 <div id="logout">
     <a href="#">Log out</a>
 </div>
@@ -7,95 +8,120 @@
     demo.email@dvla.gov.uk
 </div>
 {% endblock %}{% block content %}
-<a href="/summarycheck.html" class="btn-back">Back</a>
+
+<a href="/index.html" class="btn-back">Back</a>
 <div class="row">
     <div class="col-12">
-        <h2>Registration details</h2>
-        <br>
-        <br>
+        <h4 class="heading-small-v2">V55/4 Input</h4>
+        <h2 class="heading-extra-large-v2">Registration details</h2>
     </div>
-<!--tax_class-->
-    <div class="col-cust" id="taxc">
+
+    <!--tax_class-->
+
+    <div class="col-cust">
         <label for="taxc">
             <div class="label-title">Tax class</div>
         </label>
         <div class="input-group">
-            <input type="text" class="form-control" maxlength="30">
+            <input type="text" class="form-control" maxlength="30" id="taxc">
         </div>
     </div>
-<!--period_of_tax-->  
-    <div class="col-2" id="periodoftax">
+
+    <!--period_of_tax-->
+
+    <div class="col-2">
         <label for="periodoftax">
             <div class="label-title">Period of tax</div>
         </label>
-        <div class="input-group">  
-            <input type="text" class="form-control" maxlength="2">
+        <div class="input-group">
+            <input type="text" class="form-control" maxlength="2" id="peroidoftax">
         </div>
     </div>
-<!--tax_payable-->
-    <div class="col-2" id="taxpayable">
+
+    <!--tax_payable-->
+
+    <div class="col-2">
         <label for="Taxpayable">
             <div class="label-title">Tax payable</div>
         </label>
         <div class="input-group">
-            <span class="input-group-addon">£</span>    
-            <input type="text" class="form-control" maxlength="6">
+            <span class="input-group-addon">£</span>
+            <input type="text" class="form-control" maxlength="6" id="taxpayable">
         </div>
     </div>
-<!--reg_fee-->
-          <div class="col-2" id="regfee">
-            <label for="regfee">
-        <div class="label-title">Registration fee</div>
-        </label>
-                <div class="input-group">
-                     <span class="input-group-addon">£</span>
-                
-            <input type="text" class="form-control" maxlength="2">
-                </div>
-                </div>
-                
 
-             <br>
-             <br>
-             <br>
-<!--dateofbirth-->           
-<div class="col-12">
-             <div class="form-group" id="dob">    
-                <label for="date-of-birth">
-            <div class="label-title">Date from which tax is to run</div>
-            </label>
-            <div>
-        
-            </div>
-                <input type="text" class="form-control form-control-custom5" placeholder="DD" id="day" maxlength="2">
-                    <input type="text" class="form-control form-control-custom5" placeholder="MM" id="month" maxlength="2">
-                    <input type="text" class="form-control form-control-custom6"  placeholder="YYYY"id"year" maxlength="4">
-                    </div>
-<!--partial_postcode-->
-        <div class="form-group" id="partpostcode">
-            <label for="partpostcode">
-        <div class="label-title">Partial postcode of purchaser</div>
+    <!--reg_fee-->
+
+    <div class="col-2">
+        <label for="regfee">
+            <div class="label-title">Registration fee</div>
         </label>
-            <input type="text" class="form-control form-control-custom6" maxlength="4">
-            </div>
-<!--industry-->
-        <div class="form-group" id="industry">
-            <label for="industry">
-        <div class="label-title">Industry in which vehicle is to be used</div>
-        </label>
-            <input type="text" class="form-control form-control-custom2" maxlength="20">
-                 
+        <div class="input-group">
+            <span class="input-group-addon">£</span>
+
+            <input type="text" class="form-control" maxlength="2" id="regfee">
         </div>
-            <a href="/regdetailscheck.html" class="btn btn-primary">Continue</a>
-    
+    </div>
 
+
+    <br>
     <br>
 
 
+    <!--dateofbirth-->
+
+    <div class="col-12">
+        <div class="form-group" id="taxdate">
+            <label for="tzadate">
+                <div class="label-title">Date from which tax is to run</div>
+            </label>
+            <div>
 
 
-    
+                <input type="text" class="form-control form-control-custom5" placeholder="DD" id="day" maxlength="2">
+                <input type="text" class="form-control form-control-custom17" placeholder="MM" id="month" maxlength="2">
+                <input type="text" class="form-control form-control-custom6" placeholder="YYYY" id "year" maxlength="4">
+            </div>
+            <br>
+
+            <!--partial_postcode-->
+
+            <div class="form-group">
+                <label for="partpostcode">
+                    <div class="label-title">Partial postcode of purchaser</div>
+                </label>
+                <input type="text" class="form-control form-control-custom6" maxlength="4" id="partpostcode">
+            </div>
+
+            <!--industry-->
+
+            <div class="form-group">
+                <label for="industry">
+                    <div class="label-title">Industry in which vehicle is to be used</div>
+                </label>
+                <input type="text" class="form-control form-control-custom2" maxlength="20" id="industry">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Contiune</button>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
 </div>
-</div>
-</div>
-{% endblock %}
+<script type="text/javascript">
+    $(".btn.btn-primary").click(function () {
+        // Enter function name here
+        checkAnswers();
+    });
+    function checkAnswers() {
+        go('vehiclespecs');
+    }
+</script> {% endblock %}
